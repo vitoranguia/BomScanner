@@ -1,10 +1,10 @@
 # BomScanner
 
-Ferramenta simples para sincronizar e escanear feeds NVD (CVE) e gerar um BOM/relatório.
+Simple tool to sync and scan NVD (CVE) feeds and generate a BOM/report.
 
-## Instalação
+## Installation
 
-Recomenda-se criar um ambiente virtual e instalar dependências:
+It is recommended to create a virtual environment and install dependencies:
 
 ```bash
 python3 -m venv .venv
@@ -12,33 +12,33 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Uso
+## Usage
 
-- Mostrar ajuda:
+- Show help:
 
 ```bash
 bomscanner help
 ```
 
-- Sincronizar feeds NVD:
+- Sync NVD feeds:
 
 ```bash
 bomscanner sync
 ```
 
-- Rodar scanner a partir de um `requirements.txt` ou `pom.xml`:
+- Run scanner against a `requirements.txt` or `pom.xml`:
 
 ```bash
 bomscanner requirements.txt
 bomscanner pom.xml
 ```
 
-## Estrutura
+## Structure
 
-- `bomscanner/` — pacote principal com scripts de CLI e sincronização.
-- `data/` — onde os feeds NVD sincronizados são armazenados.
+- `bomscanner/` — main package with CLI and sync scripts.
+- `data/` — where synced NVD feeds are stored.
 
 ## License
 
 This project is licensed under the GNU General Public License v3 (GPL-3.0).
-See the `COPYING` file for the full license text.
+See the `COPYING` or `LICENSE` file for the full license text.
